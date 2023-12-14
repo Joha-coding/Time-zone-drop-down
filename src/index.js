@@ -3,11 +3,11 @@ function selectACity(event) {
     if (event.target.value === "newyork") {
       displayCurrentSelection.innerHTML = NYtime;
     }
-    if (event.target.value === "paris") {
-      displayCurrentSelection.innerHTML = parisTime;
+    if (event.target.value === "losangeles") {
+      displayCurrentSelection.innerHTML = LATime;
     }
-    if (event.target.value === "toronto") {
-      displayCurrentSelection.innerHTML = torontoTime;
+    if (event.target.value === "phoenix") {
+      displayCurrentSelection.innerHTML = phoenixTime;
     }
   }
 }
@@ -17,19 +17,20 @@ let NYtimeFormat = moment()
   .format("dddd, MMMM D, YYYY H:mmA");
 let NYtime = `It is <br/> ${NYtimeFormat} <br/> in New York, USA`;
 
-let parisTimeFormat = moment()
-  .tz("Europe/Paris")
+let LATimeFormat = moment()
+  .tz("America/Los_Angeles")
   .format("dddd, MMMM D, YYYY H:mmA");
-let parisTime = `It is <br/>
-${parisTimeFormat} <br/>
-in Paris, France`;
+let LATime = `It is <br/>
+${LATimeFormat} <br/>
+in Los Angeles, USA`;
 
-let torontoTimeFormat = moment()
-  .tz("America/Toronto")
+let phoenixTimeFormat = moment()
+  .tz("America/Phoenix")
   .format("dddd, MMMM D, YYYY H:mmA");
-let torontoTime = `It is <br/> ${torontoTimeFormat} <br/>in Toronto, France`;
 
-let citySelect = document.querySelector("#cities");
+let phoenixTime = `It is <br/> ${phoenixTimeFormat} <br/>in Phoenix, USA`;
+
+let citySelect = document.querySelector("#american-cities");
 citySelect.addEventListener("change", selectACity);
 
 let displayCurrentSelection = document.querySelector("#current-message");

@@ -10,24 +10,35 @@ h1 {
 
 footer {
   padding: 10px;
+  margin: 15px;
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
   display: block;
   margin: 0 auto;
   padding: 10px;
-  max-width: 100%;
-  border-radius: 30px;
+  max-width: 500px;
+}
+
+.cities-section {
+  display: inline-block;
+
+  margin: 15px;
 }
 
 .current-message {
   color: #5c5470;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#cities {
+#american-cities {
   background-color: #352f44;
   color: whitesmoke;
   border-radius: 30px;
