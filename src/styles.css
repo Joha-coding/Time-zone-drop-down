@@ -1,3 +1,37 @@
 body {
-  background: red;
+  background-color: #5c5470;
+  text-align: center;
+  color: whitesmoke;
+}
+
+h1 {
+  color: #352f44;
+}
+
+footer {
+  padding: 10px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.6);
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 360px;
+  border-radius: 30px;
+}
+
+#cities {
+  background-color: #352f44;
+  color: whitesmoke;
+  border-radius: 30px;
+  padding: 30px 40px;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.link {
+  color: #0b0910;
+  font-weight: 300;
 }
