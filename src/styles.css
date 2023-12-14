@@ -22,12 +22,11 @@ footer {
   display: block;
   margin: 0 auto;
   padding: 10px;
-  max-width: 500px;
+  max-width: 100%;
 }
 
 .cities-section {
   display: inline-block;
-
   margin: 15px;
 }
 
@@ -38,7 +37,9 @@ footer {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#american-cities {
+#american-cities,
+#europe-cities,
+#latam-cities {
   background-color: #352f44;
   color: whitesmoke;
   border-radius: 30px;
@@ -46,6 +47,9 @@ footer {
   font-size: 18px;
   font-weight: 300;
   text-align: center;
+  width: 250px;
+  display: inline-flex;
+  margin: 10px;
 }
 
 .link {
